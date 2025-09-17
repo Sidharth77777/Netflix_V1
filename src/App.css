@@ -1,0 +1,909 @@
+* {
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Style the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none !important;
+  display: block;
+}
+
+/* Change the link color on hover */
+.dropdown-content a:hover {
+  background-color: #fff;
+  color: white;
+}
+
+/* Show the dropdown content when the dropdown button is hovered over */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: red; /* Color of the thumb */
+  border-radius: 6px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+/* Style the scrollbar track on hover */
+::-webkit-scrollbar-track:hover {
+  background-color: #a7a4a4;
+}
+
+li {
+  list-style: none;
+}
+
+#NotFound {
+  background: url("./assets/netflix-background.jpg");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#NotFound button {
+  padding: 16px;
+  background-color: red;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 50px;
+}
+#NotFound .wrapper {
+  background: #141213;
+  min-width: 90%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+#NotFound .wrapper .left {
+  max-width: 50%;
+  margin: 0 auto;
+}
+#NotFound .wrapper .left h1 {
+  margin-bottom: 24px;
+}
+#NotFound .wrapper .right {
+  max-width: 50%;
+  margin: 0 auto;
+}
+#NotFound .wrapper .right img {
+  width: 100%;
+}
+
+#unavailable {
+  height: 100vh;
+  background-image: url("./assets/notfound_cleanup.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#unavailable button {
+  margin-left: 50px;
+  padding: 16px;
+  background-color: red;
+  color: #fff;
+  text-decoration: none;
+}
+#unavailable button .link {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+#Login {
+  background-image: url("./assets/netflix-background.jpg");
+  min-height: 100vh;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  border-bottom: 12px solid #232323;
+}
+#Login header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Login header .logo {
+  width: 200px;
+}
+#Login header .logo img {
+  width: 100%;
+}
+#Login header .nav-options ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+#Login header .nav-options ul .drop-menu {
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 8px;
+  text-align: center;
+  padding: 0 16px;
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Login header .nav-options ul .drop-menu .lang {
+  width: 30px;
+}
+#Login header .nav-options ul .drop-menu .lang img {
+  width: 100%;
+}
+#Login header .nav-options ul button {
+  background-color: #c11119;
+  color: #fff;
+}
+#Login .Started {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+#Login .Started .form {
+  text-align: center;
+  width: 100%;
+}
+#Login .Started .form h1 {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+#Login .Started .form h3 {
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+#Login .Started .form h4 {
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+#Login .Started .form form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+#Login .Started .form form .input {
+  width: 80%;
+}
+#Login .Started .form form .input input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #1c1c1e;
+  border: 2px solid #5f5e5e;
+  color: #fff;
+}
+#Login .Started .form form .input input::-moz-placeholder {
+  color: #c9c9c9;
+}
+#Login .Started .form form .input input::placeholder {
+  color: #c9c9c9;
+}
+#Login .Started .form form button {
+  color: #fff;
+  padding: 14px 12px 14px 12px;
+  background-color: #c11119;
+}
+
+#Login2 {
+  min-height: 320vh;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  background-color: #000;
+}
+#Login2 .subpage {
+  border-bottom: 12px solid #232323;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Login2 .subpage .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Login2 .subpage .wrapper .left {
+  max-width: 50%;
+}
+#Login2 .subpage .wrapper .left h1 {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+#Login2 .subpage .wrapper .right {
+  max-width: 50%;
+}
+#Login2 .subpage .wrapper .right .video {
+  max-width: 100%;
+}
+#Login2 .subpage .wrapper .right .video video {
+  width: 100%;
+}
+#Login2 .subpage .wrapper .right .img-container {
+  width: 100%;
+}
+#Login2 .subpage .wrapper .right .img-container img {
+  width: 100%;
+}
+
+#Login3 {
+  min-height: 100vh;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  background-color: #000;
+  border-bottom: 12px solid #232323;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#Login3 .wrapper h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+#Login3 .wrapper .questions .box {
+  margin: 0 auto;
+  width: 90%;
+  padding: 24px;
+  background-color: #2d2d2d;
+  text-align: left;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Login3 .wrapper .questions .box:hover {
+  background-color: #414141;
+  cursor: pointer;
+}
+#Login3 h5 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+#Login3 form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+#Login3 form .input {
+  width: 80%;
+}
+#Login3 form .input input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #1c1c1e;
+  border: 2px solid #5f5e5e;
+  color: #fff;
+}
+#Login3 form .input input::-moz-placeholder {
+  color: #c9c9c9;
+}
+#Login3 form .input input::placeholder {
+  color: #c9c9c9;
+}
+#Login3 form button {
+  color: #fff;
+  padding: 15px;
+  background-color: #c11119;
+}
+
+#LoginFooter {
+  min-height: 50vh;
+  background-color: #000;
+  padding: 50px;
+}
+#LoginFooter .wrapper {
+  color: #b3b3b3 !important;
+  width: 90%;
+}
+#LoginFooter .wrapper a {
+  text-decoration: underline !important;
+  color: #b3b3b3 !important;
+}
+#LoginFooter .wrapper p {
+  color: #b3b3b3 !important;
+}
+#LoginFooter .wrapper p span {
+  text-decoration: underline !important;
+  color: #b3b3b3 !important;
+}
+#LoginFooter .wrapper .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 16px;
+}
+#LoginFooter .wrapper .footer li {
+  margin-bottom: 16px;
+}
+#LoginFooter .drop-menu {
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 8px;
+  text-align: center;
+  padding: 0 16px;
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+#LoginFooter .drop-menu .lang {
+  width: 30px;
+}
+#LoginFooter .drop-menu .lang img {
+  width: 100%;
+}
+#LoginFooter p {
+  margin-top: 8px;
+}
+
+#SignIn {
+  min-height: 100vh;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  background-image: url("./assets/netflix-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#SignIn .logo {
+  width: 200px;
+  margin-left: 8%;
+}
+#SignIn .logo img {
+  width: 100%;
+}
+#SignIn .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#SignIn .wrapper .color-grey {
+  color: #bdbdbd;
+}
+#SignIn .wrapper .sign {
+  background-color: #050503;
+  min-height: 80vh;
+  min-width: 30%;
+  padding: 60px;
+}
+#SignIn .wrapper .sign h1 {
+  margin-bottom: 32px;
+  font-size: 32px;
+}
+#SignIn .wrapper .sign form .input {
+  width: 100%;
+  margin-bottom: 24px;
+  position: relative;
+}
+#SignIn .wrapper .sign form .input input {
+  background-color: #333;
+  color: #8c8c8c;
+  width: 100%;
+  border-radius: 8px;
+  padding: 15px;
+  border: none;
+}
+#SignIn .wrapper .sign form .input .eye {
+  position: absolute;
+  right: 3%;
+  top: 30%;
+  cursor: pointer;
+}
+#SignIn .wrapper .sign form button {
+  width: 100%;
+  color: #fff;
+  padding: 15px;
+  background-color: red;
+  margin-top: 18px;
+}
+#SignIn .wrapper .sign form .flexed {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#SignIn .wrapper .sign form .flexed .size {
+  font-size: 14px;
+}
+#SignIn .wrapper .sign .captcha {
+  margin-top: 40px;
+}
+#SignIn .wrapper .sign .captcha .size-m {
+  font-size: 19px;
+  margin-bottom: 18px;
+}
+#SignIn .wrapper .sign .captcha .size-l {
+  font-size: 14px;
+}
+#SignIn .wrapper .sign .captcha .blue {
+  color: #0078fa;
+}
+
+#registration {
+  min-height: 100vh;
+  padding: 0 40px;
+  color: #000;
+}
+#registration header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+}
+#registration header .logo {
+  width: 13%;
+}
+#registration header .logo img {
+  width: 100%;
+}
+#registration header .black {
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+}
+#registration .main {
+  min-height: 85vh;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#registration .main #registration2 {
+  color: #000 !important;
+  min-height: 60vh;
+  min-width: 50%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in-out;
+}
+#registration .main #registration2 .wrapper {
+  text-align: center;
+}
+#registration .main #registration2 .wrapper .button {
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  margin-top: 18px;
+}
+#registration .main #registration2 .wrapper .button button {
+  width: 100%;
+  background-color: red;
+  color: #fff;
+  padding: 12px;
+  font-size: 22px;
+}
+#registration .main #registration2 .wrapper h2 {
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+#registration .main #registration2 .wrapper .size {
+  font-weight: 500;
+}
+#registration .main #registration2 .img {
+  width: 80%;
+  margin: 0 auto;
+}
+#registration .main #registration2 .img img {
+  width: 100%;
+}
+#registration .main #registration3 {
+  transition: 2s all ease;
+}
+#registration .main #registration3 button {
+  background-color: red;
+  color: #fff;
+}
+#registration .main #registration3 h1 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+#registration .main #registration3 p {
+  margin-bottom: 18px;
+}
+#registration .main #registration3 .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#registration .main #registration3 .flex .eye {
+  width: 20px;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+#registration .main #registration3 .input {
+  width: 100%;
+  margin-bottom: 8px;
+  position: relative;
+}
+#registration .main #registration3 .input input {
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #808080;
+}
+#registration .main #registration3 .button {
+  width: 100%;
+  margin-top: 18px;
+}
+#registration .main #registration3 .button button {
+  width: 100%;
+  padding: 18px;
+  font-size: 22px;
+}
+#registration .main #registration4 {
+  text-align: center;
+}
+#registration .main #registration4 .margin {
+  margin-top: 12px;
+}
+#registration .main #registration4 .button {
+  width: 100%;
+  margin-top: 18px;
+}
+#registration .main #registration4 .button button {
+  width: 100%;
+  padding: 18px;
+  font-size: 22px;
+}
+#registration .main #registration4 button {
+  background-color: red;
+  color: #fff;
+}
+#registration .main #registration4 .logo {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+#registration .main #registration4 .logo .circle {
+  width: 100%;
+}
+#registration .main #registration4 .para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+#registration .main #registration4 .para .style {
+  font-weight: 600;
+}
+#registration .main #registration4 .para .tick {
+  width: 30px;
+  height: 30px;
+}
+#registration .main #registration4 .para .tick img {
+  width: 100%;
+}
+#registration .main #registration5 {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  max-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+#registration .main #registration5 .wrapper {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  max-width: 100%;
+}
+#registration .main #registration5 .wrapper .flex {
+  margin-top: 18px;
+}
+#registration .main #registration5 .wrapper .flex .para {
+  display: flex;
+  gap: 8px;
+}
+#registration .main #registration5 .wrapper .flex .para p {
+  font-size: 18px;
+}
+#registration .main #registration5 .wrapper .flex .para .logo {
+  width: 30px;
+  height: 30px;
+}
+#registration .main #registration5 .wrapper .flex .para .logo img {
+  width: 100%;
+}
+#registration .main #registration5 .wrapper #main {
+  margin-top: 18px;
+}
+#registration .main #registration5 .wrapper #main .pointer {
+  cursor: pointer;
+}
+#registration .main #registration5 .wrapper #main .first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+}
+#registration .main #registration5 .wrapper #main .second {
+  display: flex;
+  gap: 50px;
+}
+#registration .main #registration5 .wrapper #main .second .box .mobile {
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ef6b72;
+  margin-bottom: 10px;
+}
+#registration .main #registration5 .wrapper #main .second .box p {
+  text-align: center;
+}
+#registration .main #registration5 .wrapper #main .two .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 115px;
+}
+#registration .main #registration5 .wrapper #main .three {
+  display: flex;
+  justify-content: space-between;
+}
+#registration .main #registration5 .wrapper #main .three .box {
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+}
+#registration .main #registration5 .wrapper #main .three .box .box-1 .sub-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#registration .main #registration5 .wrapper #main .three .box .box-1 .sub-box .logo {
+  margin: 0 auto;
+  width: 40px;
+}
+#registration .main #registration5 .wrapper #main .three .box .box-1 .sub-box .logo img {
+  width: 100%;
+}
+#registration .main #registration5 .wrapper #main .more {
+  margin-top: 25px;
+}
+#registration .main #registration5 .wrapper #main .more .grey {
+  color: #737373;
+  font-size: 14px;
+}
+#registration .main #registration5 .wrapper #main .more .grey .terms {
+  text-decoration: none;
+}
+#registration .main #registration5 .wrapper #main .button {
+  width: 50%;
+  margin: 0 auto;
+}
+#registration .main #registration5 .wrapper #main .button button {
+  width: 100%;
+  padding: 18px;
+  font-size: 22px;
+}
+#registration .main #registration5 button {
+  background-color: red;
+  color: #fff;
+}
+
+.black {
+  color: #000;
+}
+
+#MainPage {
+  min-height: 100vh;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  background-color: #000;
+  min-width: 100%;
+  overflow-y: hidden;
+}
+#MainPage .wrapper {
+  min-height: 100vh;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+#MainPage .wrapper .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#MainPage .wrapper .header header {
+  min-width: 90%;
+  position: fixed;
+  top: 0;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+#MainPage .wrapper .header header .logo {
+  width: 10%;
+}
+#MainPage .wrapper .header header .logo img {
+  width: 100%;
+}
+#MainPage .wrapper .header header .bar {
+  width: 40px;
+  cursor: pointer;
+}
+#MainPage .wrapper .header header .bar img {
+  width: 100%;
+}
+#MainPage .wrapper #Slider {
+  min-width: 100%;
+  overflow-y: hidden;
+}
+#MainPage .wrapper #Slider::-webkit-scrollbar {
+  display: none;
+}
+#MainPage .wrapper #Slider .slide {
+  min-width: 100%;
+}
+#MainPage .wrapper #Main1 {
+  min-width: 100%;
+  min-height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#MainPage .wrapper #Main1 .highlighted {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: left;
+  margin-top: 50px;
+  padding: 100px;
+  min-width: 100%;
+  min-height: 70vh;
+  margin-top: -10px;
+}
+#MainPage .wrapper #Main1 .highlighted h1 {
+  font-size: 60px;
+  font-weight: 750;
+}
+#MainPage .wrapper #Main1 .highlighted .buttons {
+  margin: 20px 0;
+}
+#MainPage .wrapper #Main1 .highlighted .buttons button {
+  color: #fff;
+  padding: 10px 25px 10px 25px;
+  background-color: #3f4a4f;
+  filter: opacity(80%);
+  margin-right: 12px;
+}
+#MainPage .wrapper #Main1 .highlighted .buttons button:hover {
+  background-color: #353434;
+}
+#MainPage .wrapper #Main1 .highlighted p {
+  font-weight: 500;
+  width: 50%;
+}
+#MainPage .wrapper #NetflixOriginals {
+  max-width: 100%;
+  padding: 20px 0;
+}
+#MainPage .wrapper #NetflixOriginals .background {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+#MainPage .wrapper #NetflixOriginals .background h2 {
+  font-weight: 700;
+}
+#MainPage .wrapper #NetflixOriginals .background .slider {
+  margin-left: 40px;
+  display: flex;
+  overflow: auto !important;
+}
+#MainPage .wrapper #NetflixOriginals .background .slider::-webkit-scrollbar {
+  display: none;
+}
+#MainPage .wrapper #NetflixOriginals .background .slider .slide {
+  min-width: 200px;
+  min-height: 230px;
+  margin-right: 18px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+#MainPage .wrapper #NetflixOriginals .background .slider .slide:hover {
+  transform: scale(1.1);
+  transition: 0.5s transform;
+}
+#MainPage .wrapper #NetflixOriginals .background .slider .slide .vote {
+  border-radius: 50%;
+  background-color: #000;
+  border: 4px solid green;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#MainPage .wrapper #NetflixOriginals .background .slider .slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.error {
+  text-align: center;
+  color: red;
+}/*# sourceMappingURL=App.css.map */
